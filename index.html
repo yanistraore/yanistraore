@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YANIS TRAORE — ITN Student | ML & Web Engineering</title>
+  <meta name="description" content="Portfolio de Yanis Traore, étudiant ITN à BEM Tech Abidjan. Spécialisé en Machine Learning, SQL, Bases de données et Développement Web." />
+
+   
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="projet.css" />
+</head>
+<body>
+
+  <div class="cursor"></div>
+  <div class="cursor-dot"></div>
+
+
+  <div class="noise"></div>
+
+  
+  <nav class="nav">
+    <a href="#home" class="nav-logo">YT<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#journey">Parcours</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button> 
+  </nav>
+
+  
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+
+    <div class="hero-content">
+     
+      <p class="hero-eyebrow reveal">— ITN Student · BEM Tech Abidjan</p>
+      <h1 class="hero-title reveal">
+        Yanis <span class="gradient-text">Traore</span>
+      </h1>
+      <h2 class="hero-rotator reveal">
+        Je conçois des solutions en
+        <span class="rotator">
+          <span class="rotator-word active">Machine Learning</span>
+          <span class="rotator-word">SQL & Databases</span>
+          <span class="rotator-word">Web Engineering</span>
+        </span>
+      </h2>
+      <p class="hero-desc reveal">
+        Étudiant passionné par la data science et le développement web,
+        je construis des applications intelligentes — de l'analyse prédictive
+        COVID-19 à l'estimation immobilière par ML.
+      </p>
+      <div class="hero-actions reveal">
+       
+        <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+        <a href="#contact" class="btn btn-ghost">Me contacter</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span></span> Scroll
+    </div>
+  </section>
+
+  
+  <section id="about" class="section">
+    <div class="container about-grid">
+      <div class="about-image reveal">
+        
+        <div class="about-frame">
+          <img src="photomoi.port.jpeg" alt="Yanis Traore" class="about-photo">
+        </div>
+        <div class="about-badge">
+          <strong>2+</strong>
+          <span>années en Tech</span>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="section-eyebrow reveal">À propos</p>
+        <h2 class="section-title reveal">
+          Une approche <em>rigoureuse</em> de la data et du web.
+        </h2>
+        <p class="reveal">
+          Je suis étudiant en Ingénierie des Technologies Numériques (ITN) à
+          <strong>BEM Tech Abidjan</strong>, et je compte me spécialiser en Machine
+          Learning et en ingénierie logicielle.
+        </p>
+        <p class="reveal">
+          Mon objectif : transformer la donnée brute en décisions concrètes,
+          avec une expérience utilisateur soignée et une architecture solide.
+        </p>
+        <ul class="about-list reveal">
+          <li>🧠 Modèles prédictifs (scikit-learn, pandas, NumPy)</li>
+          <li>🗄️ SQL avancé & modélisation de bases de données</li>
+          <li>💻 Interfaces web modernes (HTML, CSS, JavaScript)</li>
+        </ul>
+        <button class="btn btn-secondary reveal" id="cvBtn" style="margin-top: 2rem;">📄 Voir mon CV</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modale CV -->
+  <div id="cvModal" class="cv-modal">
+    <div class="cv-modal-content">
+      <button class="cv-modal-close" id="cvClose">✕</button>
+      
+      <div class="cv-header">
+        <h1>YANIS TRAORÉ</h1>
+        <p class="cv-subtitle">Étudiant ITN · Machine Learning & Web Engineering</p>
+        <div class="cv-contact">
+          <span>📍 Abidjan, Côte d'Ivoire</span>
+          <span>✉️ yanisjordan2000@gmail.com</span>
+          <span>🎓 BEM Tech Abidjan</span>
+        </div>
+      </div>
+
+      <div class="cv-section">
+        <h2>💼 PROFIL</h2>
+        <p>Étudiant en Ingénierie des Technologies Numériques (ITN) passionné par la data science et le développement web. Spécialisé en Machine Learning, SQL et développement d'interfaces modernes. Expérience pratique dans la création de modèles prédictifs, l'optimisation de bases de données et le déploiement d'applications web.</p>
+      </div>
+
+      <div class="cv-section">
+        <h2>🎓 FORMATION</h2>
+        <div class="cv-item">
+          <div class="cv-item-header">
+            <h3>Ingénierie des Technologies Numériques (ITN)</h3>
+            <span class="cv-date">2025 — Aujourd'hui</span>
+          </div>
+          <p class="cv-org">BEM Tech Abidjan</p>
+          <p>Spécialisation en Machine Learning, bases de données avancées, et architecture logicielle.</p>
+        </div>
+      </div>
+
+      <div class="cv-section">
+        <h2>🚀 COMPÉTENCES TECHNIQUES</h2>
+        <div class="cv-skills">
+          <div class="skill-group">
+            <strong>Machine Learning & Data Science</strong>
+            <p>scikit-learn, Pandas, NumPy, Matplotlib, TensorFlow, séries temporelles</p>
+          </div>
+          <div class="skill-group">
+            <strong>Bases de Données & SQL</strong>
+            <p>SQL avancé, modélisation relationnelle, optimisation, indexation, normalisation</p>
+          </div>
+          <div class="skill-group">
+            <strong>Développement Web</strong>
+            <p>HTML5, CSS3 (animations, flexbox, grid), JavaScript ES6+, DOM, APIs</p>
+          </div>
+          <div class="skill-group">
+            <strong>Langages & Outils</strong>
+            <p>Python, SQL, JavaScript, Git, VS Code, Jupyter Notebook</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cv-section">
+        <h2>📊 PROJETS CLÉS</h2>
+        <div class="cv-item">
+          <div class="cv-item-header">
+            <h3>Analyse prédictive COVID-19</h3>
+            <span class="cv-date">2026</span>
+          </div>
+          <p>Modèle de prédiction de l'évolution des cas COVID-19 basé sur les séries temporelles. Visualisations interactives et tableau de bord d'analyse régionale. Stack: Python, scikit-learn, Pandas, Matplotlib</p>
+        </div>
+        <div class="cv-item">
+          <div class="cv-item-header">
+            <h3>Estimation de prix immobilier</h3>
+            <span class="cv-date">2026</span>
+          </div>
+          <p>Système d'estimation de biens immobiliers basé sur la régression ML. Interface web interactive. Stack: Python, SQL, JavaScript, HTML/CSS</p>
+        </div>
+      </div>
+
+      <div class="cv-section">
+        <h2>⭐ NIVEAUX DE COMPÉTENCES</h2>
+        <div class="cv-bar">
+          <label>Machine Learning</label>
+          <div class="bar"><div style="width: 90%"></div></div>
+          <span>90%</span>
+        </div>
+        <div class="cv-bar">
+          <label>SQL & Databases</label>
+          <div class="bar"><div style="width: 85%"></div></div>
+          <span>85%</span>
+        </div>
+        <div class="cv-bar">
+          <label>HTML & CSS</label>
+          <div class="bar"><div style="width: 92%"></div></div>
+          <span>92%</span>
+        </div>
+        <div class="cv-bar">
+          <label>JavaScript</label>
+          <div class="bar"><div style="width: 80%"></div></div>
+          <span>80%</span>
+        </div>
+      </div>
+
+      <div class="cv-footer">
+        <p>© 2026 Yanis Traoré. Tous droits réservés.</p>
+      </div>
+    </div>
+  </div>
+
+  
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <p class="section-eyebrow reveal">Expertise</p>
+      <h2 class="section-title reveal">Compétences & Outils</h2>
+
+      <div class="skills-grid">
+        <!-- Chaque carte affiche un domaine de compétence et une barre de progression. -->
+        <article class="skill-card reveal">
+          <div class="skill-icon">🤖</div>
+          <h3>Machine Learning</h3>
+          <p>Régression, classification, validation croisée et déploiement de modèles prédictifs.</p>
+          <div class="skill-bar"><div data-level="90"></div></div>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-icon">🗄️</div>
+          <h3>SQL & Databases</h3>
+          <p>Modélisation relationnelle, requêtes complexes, jointures, indexation et optimisation.</p>
+          <div class="skill-bar"><div data-level="85"></div></div>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-icon">🎨</div>
+          <h3>HTML & CSS</h3>
+          <p>Mise en page responsive, animations fluides, design accessible et performant.</p>
+          <div class="skill-bar"><div data-level="92"></div></div>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-icon">⚡</div>
+          <h3>JavaScript</h3>
+          <p>DOM, ES6+, asynchrone, manipulation d'API et interactions modernes côté client.</p>
+          <div class="skill-bar"><div data-level="80"></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section id="projects" class="section">
+    <div class="container">
+      <p class="section-eyebrow reveal">Réalisations</p>
+      <h2 class="section-title reveal">Projets sélectionnés</h2>
+    
+
+      <article class="project reveal">
+        <div class="project-visual project-covid">
+          <img src="project-covid.jpg" alt="Projet COVID-19" class="project-image">
+          <span class="project-tag">Machine Learning</span>
+        </div>
+        <div class="project-info">
+          <h3>Analyse prédictive COVID-19</h3>
+          <p>
+            Modèle de prédiction de l'évolution des cas COVID-19 basé sur des
+            séries temporelles, avec visualisations interactives et tableau de
+            bord d'analyse régionale.
+          </p>
+          <ul class="project-stack">
+            <li>Python</li><li>scikit-learn</li><li>Pandas</li><li>Matplotlib</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project project-reverse reveal">
+        <div class="project-visual project-realestate">
+          <img src="project-realestate.jpg" alt="Projet estimation immobilière" class="project-image">
+          <span class="project-tag">Régression ML</span>
+        </div>
+        <div class="project-info">
+          <h3>Estimation de prix immobilier</h3>
+          <p>
+            Système d'estimation de biens immobiliers à partir de features
+            géographiques et structurelles, entraîné par régression et déployé
+            avec une interface web interactive.
+          </p>
+          <ul class="project-stack">
+            <li>Python</li><li>SQL</li><li>JavaScript</li><li>HTML/CSS</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+
+  <section id="journey" class="section section-dark">
+    <div class="container">
+      <p class="section-eyebrow reveal">Parcours</p>
+      <h2 class="section-title reveal">Mon cheminement</h2>
+
+      <ol class="timeline">
+        <li class="reveal">
+          <span class="timeline-year"> octobre 2025 — Aujourd'hui</span>
+          <h3>ITN · BEM Tech Abidjan</h3>
+          <p>Formation en ingénierie des technologies numériques</p>
+        </li>
+        <li class="reveal">
+          <span class="timeline-year">2026</span>
+          <h3>Projet COVID-19</h3>
+          <p>Conception d'un modèle prédictif et d'un tableau de bord d'analyse épidémiologique en fonction de l'âge.</p>
+        </li>
+        <li class="reveal">
+          <span class="timeline-year">2026</span>
+          <h3>Estimation immobilière</h3>
+          <p>Développement d'un modèle de régression pour estimer le prix des biens selon leurs caractéristiques.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  
+  <section id="contact" class="section">
+    <div class="container contact-grid">
+      <div>
+        <p class="section-eyebrow reveal">Contact</p>
+        <h2 class="section-title reveal">Travaillons <em>ensemble</em>.</h2>
+        <p class="reveal">
+          Un projet, une opportunité de stage, ou simplement envie d'échanger ?
+          Écrivez-moi, je réponds rapidement.
+        </p>
+        <!-- Informations de contact directes : localisation, email, formation. -->
+        <ul class="contact-info reveal">
+          <li>📍 Abidjan, Côte d'Ivoire</li>
+          <li>✉️ yanisjordan2000@gmail.com</li>
+          <li>🎓 BEM Tech Abidjan — ITN</li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm">
+        <div class="field">
+          <input type="text" id="name" required />
+          <label for="name">Votre nom</label>
+        </div>
+        <div class="field">
+          <input type="email" id="email" required />
+          <label for="email">Votre email</label>
+        </div>
+        <div class="field">
+          <textarea id="message" rows="4" required></textarea>
+          <label for="message">Votre message</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Envoyer le message</button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+    </div>
+  </section>
+
+ 
+  <footer class="footer">
+    <div class="container footer-inner reveal">
+      <p>© <span id="year"></span> Yanis Traore. Tous droits réservés.</p>
+      <p>Portfolio créé avec HTML, CSS et JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="projet.js"></script>
+</body>
+</html>
